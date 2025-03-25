@@ -6,9 +6,10 @@
 }
 
 body{
-    background: rgb(253, 204, 249);
+    background: #283048;
+    background: linear-gradient(to right, #859398, #283048);
     align-items: center;
-    align-self: center;
+    justify-content: center;
 }
 
 
@@ -89,15 +90,13 @@ nav{
     border-radius: 10px;
     box-shadow: 0px 3px 10px red;
     margin: auto;
+    background-color: brown;
 }
 
 .card:hover{
     box-shadow: 0px 5px 15px blue;
 }
 
-.card{
-    background-color: brown;
-}
 
 .card img{
     width: 100%;
@@ -118,6 +117,63 @@ nav{
 }
 
 
+/* SLIDER */
+
+.carrousel-container{
+    border-radius: 20px;
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;   
+}
+
+.carrouseles{
+    width: 300%;
+    height: 100%;
+    display: flex;
+}
+
+.slider-section{
+    width: calc(100% / 3);
+    height: 100%;
+}
+
+.slider-section img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn-left, .btn-right{
+    position: absolute;
+    display:flex;
+    top: 50%;
+    transform: translate(0, -50%);
+    transition: .5s ease;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 5px;
+    color: black;
+    background-color: transparent;
+    user-select: none;
+}
+
+.btn-left:hover,
+.btn-right:hover{
+    background-color: grey;
+}
+
+.btn-left{
+    left: 10px;
+}
+
+.btn-right{
+    right: 10px;
+}
 
 
 
