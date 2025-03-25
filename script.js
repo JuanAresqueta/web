@@ -55,6 +55,4 @@ function moveToLeft(){
     
 }
 
-
-
 resetInterval();

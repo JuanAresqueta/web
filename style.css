@@ -63,8 +63,8 @@ nav{
 }
 
 .descripcion{
-    width: 400px;
-    height: 200px;
+    width: 350px;
+    height: 250px;
     background-color: gray;
     align-content: center;
     margin: auto;
@@ -177,36 +177,75 @@ nav{
 
 
 
+
+@media (max-width: 1280px){
+    /* TARJETAS */
+    .card{
+        width: 300px;
+        height: 500px;
+    }
+}
+
+@media (max-width: 1000px){  
+    /* TARJETAS */
+    #order-cards{
+        display: block;
+    }
+
+    .card{
+        margin-bottom: 20px;
+    }
+
+    
+}
+
 @media (max-width: 700px){
+    /* DESCRIPCION */
+    .descripcion-padre{    
+        display: block;
+        margin: auto;
+    }
 
-/* BARRA DE NAVEGACION */  
-nav{
-    display: inline-block;
-    text-align: center;
-    justify-content: center;
-    padding: 20px;
-} 
-
-.link{
-    display: block;
-    margin: 10px 50px;
+    /* BARRA DE NAVEGACION */  
+    nav{
+        display: inline-block;
+        text-align: center;
+        justify-content: center;
+        padding: 20px;
+    } 
+    
+    .link{
+        display: block;
+        margin: 10px 50px;
+    }
+    
+    
 }
 
-/* DESCRIPCION */
-.descripcion-padre{    
-    display: block;
-    margin: auto;
+@media (max-width: 600px){
+    /* SLIDER */
+    .carrousel-container{
+        width: 300px;
+        height: 200px;  
+    }
+    /* DESCRIPCION */
+    .descripcion{
+        width: 300px;
+        height: 200px;
+        padding: 20px;
+    }
+    
 }
 
 
-/* TARJETAS */
-#order-cards{
-    display: block;
-}
 
-.card{
-    margin-bottom: 10px;
-}
 
+
+
+
+
+
+
+@media (max-width: 700px){
 
 }
