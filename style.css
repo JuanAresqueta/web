@@ -1,0 +1,211 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(253, 204, 249);
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* BARRA DE NAVEGACION */
+nav{
+    background-color: brown;
+    display: flex;
+    justify-content: space-between;
+    width: 100%; 
+    padding: 10px 0;
+}   
+
+#logo-nav{
+    background-color: brown;
+    margin:20px;
+    width: 50px;
+    height: auto;
+}  
+
+#logo-nav:hover{
+    width: 60px;
+    height: auto;
+}
+
+.links-nav{
+    background-color: brown;
+}
+
+.link{
+    display: inline-block;
+    background-color: gray;
+    color: white;
+    text-decoration: none;
+    gap: 60px;
+    margin: 15px 10px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.link:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0px 3px 10px azure;
+}
+
+
+/* DESCRIPCION */
+.descripcion-padre{    
+    display: flex;
+    align-content: center;
+}
+
+.descripcion{
+    width: 400px;
+    height: 200px;
+    background-color: gray;
+    align-content: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.descripcion:hover{
+    background-color: rgb(167, 167, 167);
+}
+
+
+/* TARJETAS */
+#order-cards{
+    display: flex;
+}
+
+.card{
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px red;
+    margin: auto;
+    background-color: brown;
+}
+
+.card:hover{
+    box-shadow: 0px 5px 15px blue;
+}
+
+
+.card img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.img-card{
+    border-radius: 10px;
+}
+
+.desc-card{
+    color:aliceblue;
+    padding: 20px;
+}
+
+.desc-card h2{
+    text-align: center;
+}
+
+
+/* SLIDER */
+
+.carrousel-container{
+    border-radius: 20px;
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;   
+}
+
+.carrouseles{
+    width: 300%;
+    height: 100%;
+    display: flex;
+}
+
+.slider-section{
+    width: calc(100% / 3);
+    height: 100%;
+}
+
+.slider-section img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn-left, .btn-right{
+    position: absolute;
+    display:flex;
+    top: 50%;
+    transform: translate(0, -50%);
+    transition: .5s ease;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 5px;
+    color: black;
+    background-color: transparent;
+    user-select: none;
+}
+
+.btn-left:hover,
+.btn-right:hover{
+    background-color: grey;
+}
+
+.btn-left{
+    left: 10px;
+}
+
+.btn-right{
+    right: 10px;
+}
+
+
+
+@media (max-width: 700px){
+
+/* BARRA DE NAVEGACION */  
+nav{
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+} 
+
+.link{
+    display: block;
+    margin: 10px 50px;
+}
+
+/* DESCRIPCION */
+.descripcion-padre{    
+    display: block;
+    margin: auto;
+}
+
+
+/* TARJETAS */
+#order-cards{
+    display: block;
+}
+
+.card{
+    margin-bottom: 10px;
+}
+
+
+}
