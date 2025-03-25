@@ -37,11 +37,13 @@ nav{
     gap: 60px;
     margin: 15px 10px;
     padding: 20px;
+    border-radius: 5px;
 }
 
 .link:hover{
     background-color: white;
     color: black;
+    box-shadow: 0px 3px 10px azure;
 }
 
 
@@ -85,7 +87,7 @@ nav{
     box-shadow: 0px 5px 15px blue;
 }
 
-.card, .desc-card, .desc-card h2, .desc-card p, .img-card{
+.card, .desc-card, .desc-card h2, .desc-card p, .img-card a, .img-card{
     background-color: brown;
 }
 
