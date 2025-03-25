@@ -1,11 +1,10 @@
 
 *{
-    background-color: gainsboro;
     margin: 0;
     padding: 0;
 }
-
-.total-nav{
+/* BARRA DE NAVEGACION */
+nav{
     background-color: brown;
     display: flex;
     justify-content: space-between;
@@ -39,20 +38,59 @@
     color: black;
 }
 
+
+/* DESCRIPCION */
 .descripcion-padre{    
     display: flex;
 }
 
 .descripcion{
+    width: 400px;
+    height: 200px;
     background-color: gray;
     align-content: center;
-    margin: 10px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding: 50px;
 }
 
 
+/* TARJETAS */
+#order-cards{
+    display: flex;
+}
 
+.card{
+    background-color: red;
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px red;
+    margin: auto;
+}
 
+.card:hover{
+    box-shadow: 0px 5px 15px blue;
+}
+
+.card{
+    background-color: brown;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.desc-card{
+    color:aliceblue;
+    padding: 20px;
+}
+
+.desc-card h2{
+    text-align: center;
+}
 
 
 
@@ -60,8 +98,8 @@
 
 @media (max-width: 700px){
 
-   
-.total-nav{
+/* BARRA DE NAVEGACION */  
+nav{
     display: inline-block;
     text-align: center;
     justify-content: center;
@@ -73,8 +111,20 @@
     margin: 10px 50px;
 }
 
+/* DESCRIPCION */
 .descripcion-padre{    
     display: block;
+    margin: auto;
+}
+
+
+/* TARJETAS */
+#order-cards{
+    display: block;
+}
+
+.card{
+    margin-bottom: 10px;
 }
 
 
