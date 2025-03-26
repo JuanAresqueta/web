@@ -34,6 +34,7 @@ nav img{
     margin-left: 20px;
     height: 60px;
     cursor: pointer;
+    transition: all 1s ease-in-out;
 }
 
 nav ul{
@@ -81,13 +82,47 @@ nav img:hover{
 
 
 
-/* SLIDER */
+/* TOP Y SLIDER */
+
+.top-page-padre{
+    display:flex;
+}
+
+
+.top-page-right{
+    height: 400px;
+    width: 100%;
+
+    margin-top: 130px;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+
+}
+
+.top-page-right img{
+    max-width: 1000px;
+    width: 100%;
+    height: auto;
+    transition: all 1s ease;
+}
+
+.top-page{
+    display: block;
+    /* border: 1px solid black; */
+}
+
+.top-page h1{
+    color: rgb(88, 88, 88);
+    margin-top: 80px;
+    text-align: center;
+}
 
 .carrousel-container{
+    margin-top: 30px;
     border-radius: 20px;
     position: relative;
-    margin: auto;
-    margin-top: 100px;
+    margin-left: 50px;
     width: 600px;
     height: 400px;
     overflow: hidden;   
@@ -122,13 +157,13 @@ nav img:hover{
     font-weight: 700;
     padding: 5px;
     color: black;
-    background-color: rgba(128, 128, 128, 0.295);
+    background-color: #8c7f5346;
     user-select: none;
 }
 
 .btn-left:hover,
 .btn-right:hover{
-    background-color: grey;
+    background-color: #8c7f53;
 }
 
 .btn-left{
@@ -137,6 +172,10 @@ nav img:hover{
 
 .btn-right{
     right: 10px;
+}
+
+.top-page-right img:hover{
+    transform: scale(1.1);
 }
 
 
@@ -191,6 +230,7 @@ nav img:hover{
     margin-top: 20px;
     padding: 10px;
     padding-top: 1px;
+    transition: all 0.5s ease-in-out;
 }
 
 .pie-titulo{
@@ -200,6 +240,10 @@ nav img:hover{
 
 .pie-redes a i:hover{
     transform: scale(1.5);
+}
+
+.pie-logos{
+    align-content: start;
 }
 
 
@@ -294,6 +338,39 @@ nav img:hover{
     }  
     
     
+
+    /* SLIDER */
+    
+
+    .top-page-right{
+        height: 400px;
+        width: 0%;
+    }
+
+    .top-page-right img{
+        display: none;
+    }
+     
+    
+    .top-page{
+        width: 100%;
+    }
+    
+    .carrousel-container{
+        width: 80%;
+        aspect-ratio: 3 / 1;
+        margin: auto;
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente */
+    }
+
+
+
+
+
+
+
+
     /* PIE DE PAGINA */
     
     .pie-pagina{
@@ -317,6 +394,7 @@ nav img:hover{
 
     .pie-redes a i{
         font-size: 20px;
+        margin-top: 15px;
     }
 
     .pie-logo img{
@@ -325,16 +403,8 @@ nav img:hover{
     }
 
 }
-
-
-@media (max-width: 600px){
-    /* SLIDER */
-    .carrousel-container{
-        width: 300px;
-        height: 200px;  
-    }
     
-}
+
 
 
 @media (max-width: 500px){
