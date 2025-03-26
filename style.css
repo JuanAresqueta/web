@@ -231,6 +231,7 @@ nav ul{
         cursor: pointer;
         margin-left: 20px; 
         margin-top: -10px;
+        transition: all 0.5s ease;
     }
 
     nav ul{
@@ -240,10 +241,11 @@ nav ul{
         top: 50px;
         height: auto;
         width: 200px;
-        transition: opacity 0.5s ease-in-out;
+        transition: all 1s ease;
         visibility: hidden;
         opacity: 0;
         background-color: rgb(97, 97, 97);
+        border-radius: 0px 0px 10px 10px;
     }
 
     .link{
@@ -251,6 +253,7 @@ nav ul{
         margin-bottom: 5px;
         background-color: rgb(105, 105, 105);
         z-index: 20;
+        border-radius: 0px 0px 10px 10px;
     }
 
     .link:hover{
@@ -261,6 +264,10 @@ nav ul{
     
     .links-nav:hover{
         transform: scale(1);
+    }
+
+    .icon-bar:hover{
+        transform: scale(1.3);
     }
     
 
