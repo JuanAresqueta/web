@@ -8,6 +8,7 @@ body{
     background: linear-gradient(to right, #fff5d2, #a09062);
     align-items: center;
     justify-content: center;
+    font-family: calibri;
 }
 
 
@@ -32,6 +33,7 @@ nav{
 nav img{
     margin-left: 20px;
     height: 60px;
+    cursor: pointer;
 }
 
 nav ul{
@@ -72,6 +74,12 @@ nav img:hover{
     position: absolute;
     margin-left: -100px;    
 }
+
+
+
+
+
+
 
 /* SLIDER */
 
@@ -132,12 +140,67 @@ nav img:hover{
 }
 
 
+/* PIE DE PAGINA */
+.pie-pagina{
+    display: flex;
+    background-color: #8c7f53;
+    width: 100%;
+    height: 120px;
+}
+
+.pie-logo{
+    width: 20%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.pie-logo img{
+    height: 90%;
+    width: auto;
+}
+
+.pie-contacto{
+    width: 40%;
+    color: white;
+    justify-items: center; 
+}
+
+.pie-contacto i{
+    font-size: 15px;
+    display: flex;
+    margin-top: 20px;
+    
+}
+.pie-contacto i p{
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+.pie-redes{
+    text-decoration: none;
+    width: 40%;
+    color: white;
+    justify-items: center; 
+}
+
+.pie-redes a i{
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
+    margin-top: 20px;
+    padding: 10px;
+    padding-top: 1px;
+}
+
+.pie-titulo{
+    margin-top: 10px;
+}
 
 
-
-
-
-
+.pie-redes a i:hover{
+    transform: scale(1.5);
+}
 
 
 
@@ -165,9 +228,15 @@ nav img:hover{
         align-items: center;
         width: 100%;
     }
+
+    nav {
+        justify-content: center; 
+        position: relative;
+    }
     
-    nav img{
-        margin: auto;
+    #logo-nav{
+        display: block;
+        margin: 0 auto;
     }
 
     .icon-bar{
@@ -181,11 +250,12 @@ nav img:hover{
         margin-left: 20px; 
         margin-top: -10px;
         transition: all 0.5s ease;
+        z-index: 100;
     }
 
     nav ul{
         position: absolute;
-        margin-right: auto;
+        left: 0;
         display: block;
         top: 90px;
         height: auto;
@@ -221,7 +291,39 @@ nav img:hover{
         visibility: visible;
         opacity: 1;
         top: 60px;
-    }    
+    }  
+    
+    
+    /* PIE DE PAGINA */
+    
+    .pie-pagina{
+        height: 100px;
+        width: 100%;
+
+    }
+
+    .pie-titulo{
+        font-size: 15px;
+    }
+
+    .pie-contacto i{
+        margin-top: 10px;
+        
+    }
+
+    .pie-contacto i p{
+        font-size: 8px;
+    }
+
+    .pie-redes a i{
+        font-size: 20px;
+    }
+
+    .pie-logo img{
+        height: 80%;
+        width: auto;
+    }
+
 }
 
 
@@ -232,4 +334,37 @@ nav img:hover{
         height: 200px;  
     }
     
+}
+
+
+@media (max-width: 500px){
+    
+    /* PIE DE PAGINA */
+    .pie-pagina{
+        height: 80px;    
+    }
+    
+    .pie-titulo{
+        font-size: 12px;
+    }
+
+    .pie-contacto i{
+        margin-top: 10px;
+        
+    }
+
+    .pie-contacto i p{
+        margin-left: 10px;
+        font-size: 6px;
+    }
+
+    .pie-contacto i{
+        font-size: 10px;
+    }
+
+    .pie-logo img{
+        height: 60%;
+        width: auto;
+    }
+
 }
