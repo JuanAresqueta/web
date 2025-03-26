@@ -14,47 +14,50 @@ body{
 
 
 /* BARRA DE NAVEGACION */
+
 nav{
     background-color: brown;
     display: flex;
     justify-content: space-between;
     width: 100%; 
-    padding: 10px 0;
+    height: 50px;
 }   
 
-#logo-nav{
-    background-color: brown;
-    margin:20px;
+nav img{
+    margin-left: 20px;
     width: 50px;
-    height: auto;
-}  
-
-#logo-nav:hover{
-    width: 60px;
     height: auto;
 }
 
-.links-nav{
-    background-color: brown;
+nav ul{
+    display: flex;
+    list-style: none;
+    height: 100%;
+    margin-right: 30px;
+    transition: all 0.5s ease;
+
 }
 
 .link{
-    display: inline-block;
-    background-color: gray;
-    color: white;
+    display: flex;
     text-decoration: none;
-    gap: 60px;
-    margin: 15px 10px;
     padding: 20px;
-    border-radius: 5px;
+    color: white;
+    transition: all 0.5s ease;
 }
 
 .link:hover{
-    background-color: white;
-    color: black;
-    box-shadow: 0px 3px 10px azure;
+    background-color: rgb(122, 32, 32);
+    box-shadow: 0px 3px 10px black;
 }
 
+.links-nav:hover{
+    transform: scale(1.1);
+}
+
+#nav-bar, .icon-bar{
+    display: none;
+}
 
 /* DESCRIPCION */
 .descripcion-padre{    
@@ -204,22 +207,75 @@ nav{
     .descripcion-padre{    
         display: block;
         margin: auto;
+    }   
+
+    /* BARRA DE NAVEGACION */
+
+    .menu{
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    
+    nav img{
+        margin: auto;
     }
 
-    /* BARRA DE NAVEGACION */  
-    nav{
-        display: inline-block;
-        text-align: center;
-        justify-content: center;
-        padding: 20px;
-    } 
-    
-    .link{
+    .icon-bar{
+        position: absolute;
+        align-items: center;
+        margin-left: auto;
         display: block;
-        margin: 10px 50px;
+        font-size: 25px;
+        color: white;
+        cursor: pointer;
+        margin-left: 20px; 
+        margin-top: -10px;
+    }
+
+    nav ul{
+        position: absolute;
+        margin-right: auto;
+        display: block;
+        top: 50px;
+        height: auto;
+        width: 200px;
+        transition: opacity 0.5s ease-in-out;
+        visibility: hidden;
+        opacity: 0;
+        background-color: rgb(97, 97, 97);
+    }
+
+    .link{
+        width: 200px;
+        margin-bottom: 5px;
+        background-color: rgb(105, 105, 105);
+        z-index: 20;
+    }
+
+    .link:hover{
+        background-color: rgb(122, 32, 32);
+        box-shadow: 0px 3px 10px black;
+        transform: scale(1.1);
     }
     
+    .links-nav:hover{
+        transform: scale(1);
+    }
     
+
+
+
+
+
+
+    
+    #nav-bar:checked ~ nav ul {
+        visibility: visible;
+        opacity: 1;
+    }
+
+
 }
 
 @media (max-width: 600px){
@@ -237,15 +293,3 @@ nav{
     
 }
 
-
-
-
-
-
-
-
-
-
-@media (max-width: 700px){
-
-}
