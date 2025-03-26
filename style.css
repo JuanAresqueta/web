@@ -56,7 +56,9 @@ nav ul{
 }
 
 #nav-bar, .icon-bar{
-    display: none;
+    display: none;    
+    position: absolute;
+    margin-left: -100px;    
 }
 
 /* DESCRIPCION */
