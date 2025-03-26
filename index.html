@@ -9,96 +9,53 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
-
 <body>
 <!--         BARRA DE NAVEGACION         -->
 
-    <div class="menu">        
-        <input type="checkbox" id="nav-bar">
-        <label for="nav-bar">
-            <i class="fa-solid fa-bars icon-bar"></i>
-        </label>
-        <nav>
-            <img src="Imagenes/Principal.png" alt="Logo principal" id="logo-nav">
-            <ul class="links-nav">
-                <li><a href="#" class="link">Inicio</a></li>
-                <li><a href="#" class="link">Nosotros</a></li>
-                <li><a href="#" class="link">Servicios</a></li>
-                <li><a href="#" class="link">Contacto</a></li>
-            </ul>
-        </nav>
-    </div>
+<div class="menu">        
+    <input type="checkbox" id="nav-bar">
+    <label for="nav-bar">
+        <i class="fa-solid fa-bars icon-bar"></i>
+    </label>
+    <nav>
+        <img src="Imagenes/Logo.png" alt="Logo principal" id="logo-nav">
+        <ul class="links-nav">
+            <li><a href="#" class="link">Inicio</a></li>
+            <li><a href="#" class="link">Nosotros</a></li>
+            <li><a href="#" class="link">Servicios</a></li>
+            <li><a href="#" class="link">Contacto</a></li>
+        </ul>
+    </nav>
+</div>    
 
-
-    
-<!--         DESCRIPCION         -->
-   <div class="descripcion-padre">
-    <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex at voluptatem beatae accusamus eos, natus culpa. Provident ipsa eveniet maxime animi, error a debitis inventore voluptatibus itaque possimus, dicta sequi.</p>
-    <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis voluptatibus temporibus doloribus molestiae eum consequatur illo soluta est libero repellendus rem, placeat autem aut quaerat expedita velit adipisci, recusandae aspernatur.</p>
-   </div>
-
-<!--         TARJETAS         -->
-
-
-<section id="order-cards">
-    <!-- TARJETA 1 -->
-    <div class="card">
-        <div class="img-card">
-            <a href="#"><img src="Imagenes/Edificio.jpeg" alt=""></a>
-        </div>
-        <div class="desc-card">
-            <h2>Edificios</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam dignissimos, quae suscipit adipisci corporis iste rem quo quidem excepturi, earum qui. Explicabo sint necessitatibus optio earum, ipsum minus laboriosam ex.</p>
-        </div>
-    </div>
-    <!-- TARJETA 2 -->
-    <div class="card">
-        <div class="img-card">
-            <a href="#"><img src="Imagenes/Materiales.jpg" alt=""></a>
-        </div>
-        <div class="desc-card">
-            <h2>Materiales</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam dignissimos, quae suscipit adipisci corporis iste rem quo quidem excepturi, earum qui. Explicabo sint necessitatibus optio earum, ipsum minus laboriosam ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit a placeat autem corrupti? Consequuntur quae corporis saepe aperiam, praesentium sequi quo nobis voluptates! Exercitationem sint aspernatur repellat minus. Fugiat, amet.</p>
-        </div>
-    </div>
-    <!-- TARJETA 3 -->
-    <div class="card">
-        <div class="img-card">
-            <a href="#"><img src="Imagenes/Renders.jpg" alt=""></a>
-        </div>
-        <div class="desc-card">
-            <h2>Renders</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam dignissimos, quae suscipit adipisci corporis iste rem quo quidem excepturi, earum qui. Explicabo sint necessitatibus optio earum, ipsum minus laboriosam ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur voluptatem optio, sit qui, quia natus dignissimos dolorum quis obcaecati magni perspiciatis? Temporibus, neque iusto. Repellat maiores nisi quasi dolorem accusamus!</p>
-        </div>
-    </div>
-
-</section>
-
+<br>
 
 <!--         SLIDER         -->
-    <div class="carrousel-container">
-        <div class="carrouseles" id="slider">
-            <section class="slider-section">
-                <img src="Imagenes/Slider/slider-1.jpg" alt="">
-            </section>
-            <section class="slider-section">
-                <img src="Imagenes/Slider/slider-2.webp" alt="">
-            </section>
-            <section class="slider-section">
-                <img src="Imagenes/Slider/slider-3.jpeg" alt="">
-            </section>
-        </div>
-        <div class="btn-left"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAK1JREFUSEvtlDEOgzAQBIeP0gANT0C0ES0SBQoFyqvS5S2JLoqlEyI529hFJFyvds67PhdkPkVmf06AmXBsRBPwAEaLEANYgOZjfAH6X5BQgDYX3xloUwBkkKua3MtcRD43EM0NKNWk5uROawH2zFegssr1AXwzr4HnXwBcR9v8k0WkY8xW8mGI9Yp0l1G7EAJwML3NA9Cl2OSth0DuuT473xV462IiOgFBCZjiF2tAHhmrufjUAAAAAElFTkSuQmCC"/></div>
-        <div class="btn-right"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAKxJREFUSEvt1LEKg0AMxvG/byG+WhdxaHEouIoP4eZiu+iDtgQURE4vOcymc/x+Jhcvw/nJnPO5geiEtSNqgQJ4RxN3BRqgB5rlvRF4WhANMAD1JtSEaADJTka0gCBfoLJ2YgGk9hNAXsDv6FwsgGRI/Qw8NoETUB4hKcC+i8uA0IhOw9eWtWsdOuTT+VsA1zVNDtd24H5VyId0QO512WmXIFhn/Q/M2A1ER/YHwc0fGYJeKaMAAAAASUVORK5CYII="/></div>
+<div class="carrousel-container">
+    <div class="carrouseles" id="slider">
+        <section class="slider-section">
+            <img src="Imagenes/Slider/slider-1.jpg" alt="">
+        </section>
+        <section class="slider-section">
+            <img src="Imagenes/Slider/slider-2.webp" alt="">
+        </section>
+        <section class="slider-section">
+            <img src="Imagenes/Slider/slider-3.jpeg" alt="">
+        </section>
     </div>
+    <div class="btn-left"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAK1JREFUSEvtlDEOgzAQBIeP0gANT0C0ES0SBQoFyqvS5S2JLoqlEyI529hFJFyvds67PhdkPkVmf06AmXBsRBPwAEaLEANYgOZjfAH6X5BQgDYX3xloUwBkkKua3MtcRD43EM0NKNWk5uROawH2zFegssr1AXwzr4HnXwBcR9v8k0WkY8xW8mGI9Yp0l1G7EAJwML3NA9Cl2OSth0DuuT473xV462IiOgFBCZjiF2tAHhmrufjUAAAAAElFTkSuQmCC"/></div>
+    <div class="btn-right"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAKxJREFUSEvt1LEKg0AMxvG/byG+WhdxaHEouIoP4eZiu+iDtgQURE4vOcymc/x+Jhcvw/nJnPO5geiEtSNqgQJ4RxN3BRqgB5rlvRF4WhANMAD1JtSEaADJTka0gCBfoLJ2YgGk9hNAXsDv6FwsgGRI/Qw8NoETUB4hKcC+i8uA0IhOw9eWtWsdOuTT+VsA1zVNDtd24H5VyId0QO512WmXIFhn/Q/M2A1ER/YHwc0fGYJeKaMAAAAASUVORK5CYII="/></div>
+</div>
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
 
-   <br><br><br>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
-
 
 </html>
