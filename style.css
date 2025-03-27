@@ -5,7 +5,7 @@
 }
 
 body{
-    background: linear-gradient(to right, #fff5d2, #a09062);
+    background: #f5f1e6;
     align-items: center;
     justify-content: center;
     font-family: calibri;
@@ -30,6 +30,7 @@ nav{
     background-color: #8c7f53;
     width: 100%;
     height: 60px;
+    z-index: 10;
 }
 
 #logo-nav{
@@ -89,6 +90,265 @@ nav ul{
 
 #logo-nav:hover, .logo-principal-nav img:hover{
     transform: scale(1.1);
+}
+
+
+/* TOP Y SLIDER */
+
+.top-page-padre{
+    background-image: url(Imagenes/fondo.jpg);
+    background-size: cover; /* Hace que la imagen cubra todo el fondo */
+    background-position: center 100%; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    display: flex;
+    width: 100%;
+    height: 100vh; 
+}
+
+.top-page-left{
+    display: flex;
+    width: 60%;
+    height: 100%;
+}
+
+
+.top-page-right{
+    display: flex   ;
+    width: 40%;
+    height: 100%;
+}
+
+.top-page-right img{
+    height: auto;
+    width: 100%;
+    margin: auto;
+    transition: .5s ease;
+}
+
+.carrousel-container{
+    position: relative;
+    border-radius: 20px;
+    margin-top: 40vh;
+    margin-left: 1%;
+    width: 60%;
+    height: 50%;
+    overflow: hidden;
+    box-shadow: 0px 3px 10px black;
+}
+
+.carrouseles{
+    width: 300%;
+    height: 100%;
+    display: flex;
+}
+
+.slider-section{
+    width: calc(100% / 3);
+    height: 100%;
+}
+
+.slider-section img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn-left, .btn-right{
+    position: absolute;
+    display:flex;
+    top: 50%;
+    transform: translate(0, -50%);
+    transition: .5s ease;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 5px;
+    color: black;
+    background-color: #8c7f5346;
+    user-select: none;
+}
+
+.btn-left:hover,
+.btn-right:hover{
+    background-color: #8c7f53;
+}
+
+.btn-left{
+    left: 10px;
+}
+
+.btn-right{
+    right: 10px;
+}
+
+.top-page-right img:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+ /* TARJETAS */
+ .tarjetas-padre{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 100px;
+    /* border: 1px solid black; */
+}
+
+.tarjetas-titulo{
+    width: 100%;
+    height: 15%;
+    text-align: start;
+    text-transform: uppercase;
+    margin-top: 50px;
+    font-size: 30px;
+    color: #2c2b26
+    /* border: 1px solid black; */
+}
+
+.tarjetas{
+    background: linear-gradient(to left, #f5f1e6, #8c7f53);
+    display: flex;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 3px 10px black;
+}
+
+.tarjeta-presentacion{
+    display: block;
+    width: 35%;
+    height: 500px;
+    margin: auto;
+    transition: all 0.5s ease-in-out;
+}
+
+.presentacion-img{
+    display: flex;
+    width: 100%;
+    height: 20%;
+}
+
+.presentacion-img img{
+    height: 100%;
+    width: auto; 
+    margin: auto;
+}
+
+.presentacion-p{
+    width: 100%;
+    height: 80%;
+}
+
+.presentacion-p p{
+    color: white;
+    text-align: justify;
+    padding: 20px;
+    font-size: 25px;
+}
+
+
+
+
+.tarjeta-1, .tarjeta-2{
+    display: block;
+    width: 350px;
+    height: 500px;
+    margin: auto;
+    background: linear-gradient(to right, #f5f1e6, #8c7f53);
+    box-shadow: 0px 3px 10px black;
+    transition: all 0.5s ease-in-out;
+}
+
+.tarjeta-1:hover, .tarjeta-2:hover{
+    transform: scale(1.2);
+}
+
+.foto-1, .foto-2{
+    width: 90%;
+    height: 45%;
+    margin:auto;
+    margin-top: 15px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.foto-1 img{
+    width: 100%;
+    transform: translate(0, -30%);
+}
+
+.foto-2 img{
+    width: 100%;
+    transform: translate(0, -10%);
+}
+
+.titulo-1, .titulo-2{
+    width: 90%;
+    height: 10%;
+    margin:auto;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    background-color: #8c7f53;
+}
+
+.titulo-1:hover, .titulo-2:hover{
+    transform: scale(1.1);
+    border-radius: 10px 10px 10px 10px;
+}
+
+.titulo-1 h2{
+    font-size: 20px;
+}
+.titulo-1 h3{
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.descripcion-1, .descripcion-2{
+    width: 90%;
+    height: 30%;
+    margin:auto;
+    background-color: transparent;
+}
+
+.descripcion-1 p, .descripcion-2 p{
+    padding: 5px;
+    text-align: justify;
+}
+
+.redes-1, .redes-2{
+    width: 90%;
+    height: 10%;
+    margin:auto;
+    display: flex;
+    border-radius: 0px 0px 10px 10px;
+    background-color: #8c7f53;
+}
+
+
+.redes-1 a i:hover, .redes-2 a i:hover{
+    transform: scale(1.5);
+}
+
+
+.redes-1, .redes-2{
+    color: white;
+    font-size: 30px;
+    padding: 10px 20px;
+    justify-content: space-between;
+}
+
+.redes-1 a i, .redes-2 a i{
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s ease-in-out;   
 }
 
 
@@ -165,7 +425,28 @@ nav ul{
 
 
 
+@media (max-width: 800px){
 
+    /* TARJETAS */
+
+   .tarjetas{
+       display: block;
+   }
+
+   .tarjeta-1, .tarjeta-2{
+       transform: scale(0.8);
+       margin-top: -80px;
+   }
+
+   .foto-1, .titulo-1, .descripcion-1, .redes-1, 
+   .foto-2, .titulo-2, .descripcion-2, .redes-2{
+       transform: translate(0, 5%);
+   }
+   
+   .tarjeta-1:hover, .tarjeta-2:hover{
+       transform: scale(0.9);
+   }
+}
 
 @media (max-width: 700px){
 
