@@ -11,6 +11,9 @@ body{
     font-family: calibri;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
 
 /* BARRA DE NAVEGACION */
 
@@ -246,8 +249,8 @@ nav img:hover{
     align-content: start;
 }
 
- /* TARJETAS */
 
+ /* TARJETAS */
  .tarjetas-padre{
     display: block;
     width: 95%;
@@ -378,6 +381,9 @@ nav img:hover{
 
 
 @media (max-width: 800px){
+
+     /* TARJETAS */
+
     .tarjetas{
         display: block;
     }
@@ -502,13 +508,6 @@ nav img:hover{
         align-items: center; /* Centra verticalmente */
     }
 
-
-
-
-
-
-
-
     /* PIE DE PAGINA */
 
     .pie-pagina{
@@ -540,7 +539,8 @@ nav img:hover{
         width: auto;
     }
 
-    
+     /* TARJETAS */
+     
      .tarjetas-padre{
         margin-top: -140px;
     }
