@@ -16,3 +16,16 @@ function ajustarNavbar() {
 document.addEventListener("DOMContentLoaded", ajustarNavbar); // Cuando la página termina de cargar
 window.addEventListener("resize", ajustarNavbar); // Cuando se cambia el tamaño de la ventana
 window.addEventListener("scroll", ajustarNavbar); // Detectar scroll normalmente
+
+
+
+
+window.addEventListener("scroll", function () {
+  let imagen = document.getElementById("id-logo-nav");
+
+  if (window.scrollY >= 200) {
+    imagen.classList.remove("hidden-logo"); // Se muestra
+  } else {
+    imagen.classList.add("hidden-logo"); // Se oculta
+  }
+});
