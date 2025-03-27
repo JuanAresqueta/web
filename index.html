@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estudio Insular</title>
+    <title>Prueba web</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/1c4e9adf98.js" crossorigin="anonymous"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
+   
 <!--         BARRA DE NAVEGACION         -->
 
-<div class="menu">        
-    <input type="checkbox" id="nav-bar">
-    <label for="nav-bar">
-        <i class="fa-solid fa-bars icon-bar"></i>
-    </label>
-    <nav>
+<div class="menu">  
+    <header id="header">     
         <a href="#"><img src="Imagenes/Logo.png" alt="Logo principal" id="logo-nav"></a>
+    </header> 
+    <input type="checkbox" id="nav-bar">
+    <nav id="navbar">
+        <label for="nav-bar">
+            <i class="fa-solid fa-bars icon-bar"></i>
+        </label>
         <ul class="links-nav">
             <li><a href="#" class="link">Inicio</a></li>
             <li><a href="#nosotros-id" class="link">Nosotros</a></li>
@@ -28,131 +31,30 @@
     </nav>
 </div>    
 
-<br>
 
-<!--         SLIDER         -->
-<div class="top-page-padre">
-    <div class="top-page">
-        <h1>Nuestros últimos trabajos</h1>
-        <div class="carrousel-container">
-            <div class="carrouseles" id="slider">
-                <section class="slider-section">
-                    <img src="Imagenes/Slider/slider-1.jpg" alt="">
-                </section>
-                <section class="slider-section">
-                    <img src="Imagenes/Slider/slider-2.webp" alt="">
-                </section>
-                <section class="slider-section">
-                    <img src="Imagenes/Slider/slider-3.jpeg" alt="">
-                </section>
-            </div>
-            <div class="btn-left"><img src="data:image/png;base64,      iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAK1JREFUSEvtlDEOgzAQBIeP0gANT0C0ES0SBQoFyqvS5S2JLoqlEyI529hFJFyv    ds67    PhdkPkVmf06AmXBsRBPwAEaLEANYgOZjfAH6X5BQgDYX3xloUwBkkKua3MtcRD43EM0NKNWk5uROawH2zFegssr1AXwzr4HnXwBcR9v8k0WkY8xW8mGI9Yp0l1G7EAJw  ML3N  A9Cl2OSth0DuuT473xV462IiOgFBCZjiF2tAHhmrufjUAAAAAElFTkSuQmCC"/></div>
-            <div class="btn-right"><img src="data:image/png;base64,     iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAKxJREFUSEvt1LEKg0AMxvG/byG+WhdxaHEouIoP4eZiu+iDtgQURE4vOcymc/  x  +Jhcvw/nJnPO5geiEtSNqgQJ4RxN3BRqgB5rlvRF4WhANMAD1JtSEaADJTka0gCBfoLJ2YgGk9hNAXsDv6FwsgGRI/Qw8NoETUB4hKcC   +i8uA0IhOw9eWtWsdOuTT +VsA1zVNDtd24H5VyId0QO512WmXIFhn/Q/M2A1ER/YHwc0fGYJeKaMAAAAASUVORK5CYII="/></div>
-        </div>
-    </div>
-    <div class="top-page-right">
-        <img src="Imagenes/Logo.png" alt="logo">
-    </div>
-</div>
-
-
-<!--         TARJETAS        -->
-
-
-<div class="tarjetas-padre">
-    <div class="tarjetas-titulo">
-        <h1 id="nosotros-id">Sobre nosotros</h1>
-    </div>
-    <div class="tarjetas">
-        <div class="tarjeta-1">
-            <div class="foto-1">
-                <img src="Imagenes/Tarjetas/tarjeta 1.jpg" alt="meli">
-            </div>
-            <div class="titulo-1">
-                <h2>Melina Noelí Ramos</h2>
-                <h3>Arquitecta/Renderista</h3>
-            </div>
-            <div class="descripcion-1">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatem, laborum saepe vel dolores    distinctio explicabo eligendi sapiente nemo error amet ex, aperiam assumenda, soluta similique. Consequunturveniam     eveniet tempore.</p>
-            </div>
-            <div class="redes-1">
-                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram" ></i></a>
-                <a href="#"><i class="fa-brands fa-whatsapp"><p></p></i></a>
-                <a href="#"><i class="fa-solid fa-envelope"><p></p></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
-        </div>
-        <div class="tarjeta-2">
-            <div class="foto-2">
-                <img src="Imagenes/Tarjetas/tarjeta 2.jpg" alt="meli">
-            </div>
-            <div class="titulo-2">
-            </div>
-            <div class="descripcion-2">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptatem, modi ullam ipsa odit harum sint repellendus cumque cupiditate id perspiciatis quod facilis sequi delectus, necessitatibus laborum voluptas autem beatae!</p>
-            </div>
-            <div class="redes-2">
-                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram" ></i></a>
-                <a href="#"><i class="fa-brands fa-whatsapp"><p></p></i></a>
-                <a href="#"><i class="fa-solid fa-envelope"><p></p></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-<br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--         PIE DE PAGINA         -->
-
-<div class="pie-pagina">
-    <div class="pie-contacto">
-        <h2 class="pie-titulo" id="pie-id">Contáctanos</h2>    
-        <div class="pie logos"> 
-            <i class="fa-brands fa-whatsapp"><p>+54 0 2964 000000</p></i>
-            <i class="fa-solid fa-envelope"><p>Estudio-Insular@gmail.com</p></i>
-        </div>
-    </div>
-    <div class="pie-logo">
-        <img src="Imagenes/Logo.png" alt="logo principal">
-    </div>
-    <div class="pie-redes">
-        <h2 class="pie-titulo">Síguenos</h2>
-        <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram" ></i></a>
-    </div>
-</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 <script src="script.js"></script>
