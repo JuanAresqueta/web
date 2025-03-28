@@ -5,7 +5,8 @@
 }
 
 body{
-    background: #f5f1e6;
+    /* background: #f5f1e6; */
+    background: linear-gradient(to left, #a59d87, #8c7f53);
     align-items: center;
     justify-content: center;
     font-family: calibri;
@@ -282,6 +283,7 @@ nav ul{
     width: 60%;
     height: auto;
     margin: auto;
+    padding-bottom: 30px;
 }
 
 
