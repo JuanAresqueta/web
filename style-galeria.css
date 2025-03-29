@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.galeria-padre{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.galeria-img-1, .galeria-img-2, .galeria-img-3{
+    display: flex;    
+    justify-content: center;  
+    align-items: center;  
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    margin-top: 10px;
+    overflow: hidden;
+    box-shadow: 0px 3px 3px black;
+    transition: all .5s ease-in-out;
+}
+
+.galeria-img-1 img, .galeria-img-2 img, .galeria-img-3 img{    
+    height: 310px;
+    margin: auto;
+}
+
+.galeria-img-1:hover, .galeria-img-2:hover, .galeria-img-3:hover{
+    transform:scale(1.1);
+}
+
+
+
+/* BIG PICTURE */
+
+.galeria-1-padre, .galeria-2-padre, .galeria-3-padre{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: auto;
+    height: auto;
+}
+
+#galeria-id-1, #galeria-id-2, #galeria-id-3{
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3000;
+    transform: translate(-300%)
+}
+
+#galeria-id-1 img, #galeria-id-2 img, #galeria-id-3 img{
+    position: absolute;
+    height: auto;
+    width: 80vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#galeria-id-1 a i, #galeria-id-2 a i, #galeria-id-3 a i{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+#galeria-id-1:target, #galeria-id-2:target, #galeria-id-3:target{
+    transform: translate(0%); 
+
+}
+
+
+.btn-left, .btn-right{
+    position: absolute;
+    display:flex;
+    top: 50%;
+    transform: translate(0, -50%);
+    transition: .5s ease;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 5px;
+    color: black;   
+    user-select: none;
+}
+
+.btn-left:hover,
+.btn-right:hover{
+    transform: scale(1.4);
+    translate: 0% -50%;
+}
+
+.btn-left{
+    left: 20px;
+}
+
+.btn-right{
+    right: 20px;
+}
